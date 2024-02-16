@@ -130,3 +130,27 @@ body {
   cursor: pointer;
   font-size: 48px;
 }
+
+
+@media screen and (max-width: 700px) {
+  .board .game {
+    grid-template-columns: repeat(6, minmax(30px, 1fr)); /* Ajustar tamaño mínimo y máximo de los cuadrados */
+    gap: 5px; /* Añadir espacio entre los cuadrados */
+  }
+
+  .board .game .square {
+    font-size: 14px; /* Reducir tamaño de fuente */
+    width: 30px; /* Reducir ancho de los cuadrados */
+    height: 30px; /* Reducir altura de los cuadrados */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .board .game .square {
+    font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+    width: 25px; /* Reducir aún más el ancho de los cuadrados */
+    height: 25px; /* Reducir aún más la altura de los cuadrados */
+  }
+}
+
+
