@@ -15,7 +15,7 @@ Este proyecto es una implementación del clásico juego de mesa 4 en Línea desa
 
 ## Acceso al Juego
 
-Puedes acceder al juego desplegado [aquí](#).
+Puedes acceder al juego desplegado [aquí](https://symphonious-bombolone-c3f67a.netlify.app/).
 
 ## Basado en un Repositorio de Midudev
 
