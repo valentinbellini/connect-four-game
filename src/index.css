@@ -131,6 +131,42 @@ body {
   font-size: 48px;
 }
 
+.htp-modal {
+  display: none;
+}
+
+.htp-modal-open {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  place-items: center;
+  font-family: system-ui;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.htp-modal-open ul {
+  list-style: none;
+}
+
+.htp-modal-open li {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500ox) {
+  .htp-modal-open{
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .board .game {

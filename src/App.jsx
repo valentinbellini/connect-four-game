@@ -7,6 +7,7 @@ import { TURNS } from './constants.js'
 import { checkEndGame, checkWinner } from './logic/board.js'
 import { WinnerModal } from './components/WinnerModal.jsx'
 import { saveGameToStorage, resetGameStorage } from './logic/storage/handleLocalStorage.js'
+import { HowToPlayModal } from './components/HowToPlayModal.jsx'
 
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
   })
 
   const [winner, setWinner] = useState(null) // null = No hay ganador y false = empate
+
+  const openHowToPlayModal = () =>{
+    document.querySelector('.htp-modal').classList.add('htp-modal-open')
+  }
 
   const resetGame = () => {
     // Primero setear los states a sus valores originales
@@ -66,9 +71,12 @@ function App() {
     }
   }
 
+
+
   return (
     <main className='board'>
-      <h1>4 RAYAS.</h1>
+      <h1>Connect Four</h1>
+      <button onClick={openHowToPlayModal}> Como jugar</button>
       <button onClick={resetGame}>Reiniciar Juego</button>
       <section className='game'>
         {
@@ -94,7 +102,7 @@ function App() {
           {TURNS.O}
         </Square>
       </section>
-
+      <HowToPlayModal />
       <WinnerModal resetGame={resetGame} winner={winner} />
 
     </main>
