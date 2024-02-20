@@ -15,11 +15,11 @@ Este proyecto es una implementación del clásico juego de mesa 4 en Línea desa
 
 ## Acceso al Juego
 
-Puedes acceder al juego desplegado [aquí](https://symphonious-bombolone-c3f67a.netlify.app/).
+Puedes acceder al juego desplegado [aquí](https://65cf91f842db570008d866fe--symphonious-bombolone-c3f67a.netlify.app/).
 
 ## Basado en un Repositorio de Midudev
 
-Este juego está basado en una copia del repositorio de [midudev](https://github.com/midudev/coders-tic-tac-toe), quien proporcionó la base del juego de Tic-Tac-Toe que fue adaptada y extendida para crear esta versión de 4 en Línea.
+Este juego está basado en una copia del repositorio de [midudev](https://github.com/midudev/aprendiendo-react/tree/master/projects/02-tic-tac-toe), quien proporcionó la base del juego de Tic-Tac-Toe que fue adaptada y extendida para crear esta versión de 4 en Línea.
 
 
 ## Plugins de Vite para React
